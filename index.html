@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,700i&amp;subset=latin-ext" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/responsive.css" />
+        <script src="css/jquery-3.2.1.min.js"></script>
+        <title>orange landing</title>
+        
+        
+        <script>
+            $(document).ready(function(){
+
+                $("#menu-icon").click(function(){
+                    $('#top-nav').toggle();
+                });
+            });
+
+        </script>
+        
+        
+    </head>
+    <body>
+        
+    <header>
+        <div class="center-box">
+            
+            
+            <div id="menu-icon">
+                <a href="#"><img src="img/micon-01.svg" alt=""></a>
+            </div>
+            
+            
+            <div id="flag">
+                <img src="img/flag.png" alt="flag">
+                <div id="language">
+                    English
+                </div>
+                <div id="select"></div>
+            </div>
+            
+            
+            <nav id="top-nav">
+                <ul>
+                    <li><a href="#">NAPI AKCIÓ</a></li>
+                    <li><a href="#">FŐLDAL</a></li>
+                    <li><a href="#">RÓLUNK</a></li>
+                    <li><a href="#">SZOLGÁLTATÁS</a></li>
+                    <li><a href="#">KAPCSOLAT</a></li>
+                </ul>
+            </nav>     
+        </div>
+    </header>
+        
+    
+    <main> 
+        
+        <div class="center-box"> 
+           
+            <div id="fruits">
+                <img id="big-fruit" src="img/bigfruit.png" alt="">
+                <img id="small-fruit" src="img/smallfruit.png" alt="">
+            </div>
+            <div id="top">
+                              
+                <div id="logo">
+                   <a href="#"><img id="logo1" src="img/logo.png" alt="Lemonet" /></a>
+                   <a href="#"><img id="logo2" src="img/logo2.png" alt="Lemonet" /></a>
+                </div>
+                <div id="vonal1">
+                    <hr />
+                </div>
+                <h1>NARANCS ÉS CITROM EREJÉVEL</h1>
+                <h2>Lorem ipsum dolor sit amet.</h2>
+                
+                <div id="vonal2">
+                    <hr />
+                </div>
+                
+                <h3>Lorem ipsum dolor sit amet</h3>
+                
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur <br /> adipiscing elit. Fusce aliquam tincidunt risus, <br /> vel feugiat mauris imperdiet in.  
+                </p>
+                <div class="button"><a href="#">MEGNÉZEM</a></div>
+                
+              
+            </div>
+        </div>
+        
+           
+        <div id="black">      
+            <div class="center-box">
+               
+                  <div id="box">
+                   <div id="box-opacity">
+                   <h4>LOREM IPSUM DOLOR SIT AMET</h4>
+                   </div>
+                   
+                    <div id="slidershow">
+                      
+                       <div id="slidershow-wrapper">
+                        <img class="slideshow-img" src="img/s1.png" alt="">
+                        <img class="slideshow-img" src="img/s2.png" alt="">
+                        <img class="slideshow-img" src="img/s3.png" alt="">
+                      </div>
+                         
+                         
+                         <div id="slideshow-control">
+                          <div id="up">
+                              <div id="right"></div>
+                          </div>
+                          <div id="down">
+                              <div id="left"></div>
+                          </div>
+                           
+                       </div>
+                       <div class="clear"></div>
+                   
+                   </div>
+                   
+                   
+                      <script>
+                          var myIndex = 0;
+                          carousel();
+
+                          function carousel() {
+                              var i;
+                              var x = document.getElementsByClassName("slideshow-img");
+                              for (i = 0; i < x.length; i++) {
+                                  x[i].style.display = "none";  
+                              }
+                              myIndex++;
+                              if (myIndex > x.length) {myIndex = 1}    
+                              x[myIndex-1].style.display = "block";  
+                              setTimeout(carousel, 4000);    
+                          }
+                      </script>
+                   
+                   
+                   
+                  
+                   <h1>Lorem ipsum dolor sit amet</h1>
+                   <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce aliquam tincidunt risus, vel feugiat mauris imperdiet in.  </h5>
+                   <div class="button"><a href="#">MEGNÉZEM</a></div>
+               </div>
+               
+               
+               <div id="box-center">
+                   <img src="img/tv.png" alt="">
+               </div>
+               
+                
+                   
+                <div id="box2">
+                    <div id="box2-opacity">
+                    <h4>LOREM IPSUM DOLOR SIT AMET</h4>
+                    </div>
+                    <h1>Lorem ipsum dolor sit amet</h1>
+                    <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce aliquam tincidunt risus, vel feugiat mauris imperdiet in.  A adipiscing elit. Fusce aliquam tincidunt risus.</h5>
+                    
+                    <div id="box2-list">
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet, consectetur</li>    
+                            <li>adipiscing elit. Fusce aliquam tincidunt</li>
+                            <li>risus, vel feugiat mauris imperdiet in.</li>
+                        </ul>
+                    </div>
+                <div class="button"><a href="#">MEGNÉZEM</a></div>
+            </div>
+                
+                
+                <div class="clear"></div>
+            
+            
+            </div>
+        </div>
+    </main>
+
+     
+    
+    <footer>
+        <div class="center-box">
+            <div id="copy">
+                Copyright © 2017 Lemonet. Minden jog fenntartva.
+            </div>
+            
+            <nav>
+                <ul>
+                    <li><a href="#">FŐLDAL</a></li>
+                    <li><a href="#">SZOLGÁLTATÁS</a></li>
+                    <li><a href="#">KAPCSOLAT</a></li>
+                </ul>   
+            </nav>
+            
+        </div>
+    </footer>
+    </body>
+</html>
